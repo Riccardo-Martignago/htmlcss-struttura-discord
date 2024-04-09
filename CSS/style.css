@@ -2,8 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}   /*main color discord #255EE9*/
 header{
     color: white;
-    background-color: #404eed;
+    background-color: #255EE9;
+}
+button{   
+    border: transparent;
+    border-radius:2rem;
+    padding: .5rem 1rem;
+    /*background-color: white;*/
+    text-align: center;
+}
+.h-section{
+    background-image: url(../img/jumbo.png);
+}
+footer{
+    color: white;
+    background-color: #23272A;
+}
+header, main, footer, main > section, nav > ul, div, main:last-child{
+    display: flex;
+}
+main, header, footer, section:last-child{
+    flex-direction: column;
 }
