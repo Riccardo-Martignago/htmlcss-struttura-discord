@@ -28,10 +28,10 @@ footer{
     color: white;
     background-color: #23272A;
 }
-header, main, footer, main > section, nav > ul, div div, main:last-child, nav, .h-section{
+header, main, footer, main > section, nav > ul, div div, main:last-child, nav, .h-section, article{
     display: flex;
 }
-main, header, footer, section:last-child{
+main, header, footer, section:last-child, article{
     flex-direction: column;
 }
 ul{
@@ -55,6 +55,7 @@ h1, h2{
 }
 .h-section{
     justify-content: center;
+    padding: 6rem 0 5.7rem;
 }
 section.h-section > p{
     padding-bottom:1rem;
@@ -62,9 +63,6 @@ section.h-section > p{
 p{
     max-width: 570px ;
     text-align: center;
-}
-.h-section{
-    padding: 6rem 0 5.7rem;
 }
 h1{
     padding-bottom:1.5rem;
@@ -80,4 +78,17 @@ div.mid-butt > button{
 }
 .arrow::before{
     content: "\2193";
+}
+article{
+    justify-content: center;
+    max-width: 18rem;
+}
+article > p{
+    text-align: left;
+}
+img{
+    max-width: 500px;
+}
+main > section{
+    padding: 5rem;
 }
