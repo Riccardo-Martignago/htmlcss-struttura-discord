@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }   /*main color discord #255EE9*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 header{
     color: white;
     background-color: #255EE9;
@@ -11,19 +15,69 @@ button{
     border: transparent;
     border-radius:2rem;
     padding: .5rem 1rem;
-    /*background-color: white;*/
+    background-color: white;
     text-align: center;
 }
 .h-section{
     background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
 }
 footer{
     color: white;
     background-color: #23272A;
 }
-header, main, footer, main > section, nav > ul, div, main:last-child{
+header, main, footer, main > section, nav > ul, div div, main:last-child, nav, .h-section{
     display: flex;
 }
 main, header, footer, section:last-child{
     flex-direction: column;
+}
+ul{
+    list-style-type: none;
+}
+.log-butt{
+    padding: 1rem 6rem 1rem;
+    justify-content: space-between;
+}
+nav, .h-section{
+    align-items: center;
+}
+.search > li {
+    padding: 0 1rem;
+}
+[alt="Logo"]{
+    width: 6rem;
+}
+h1, h2{
+    font-size: 2.5rem;
+}
+.h-section{
+    justify-content: center;
+}
+section.h-section > p{
+    padding-bottom:1rem;
+}
+p{
+    max-width: 570px ;
+    text-align: center;
+}
+.h-section{
+    padding: 6rem 0 5.7rem;
+}
+h1{
+    padding-bottom:1.5rem;
+}
+div.mid-butt > button{
+    margin: 0 .5rem;
+}
+.b-black{
+    background-color: #23272A;
+}
+.white{
+    color: white;
+}
+.arrow::before{
+    content: "\2193";
 }
